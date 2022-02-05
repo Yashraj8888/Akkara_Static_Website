@@ -1,0 +1,128 @@
+/* -----------------------------------navbar responsive------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    .nav .nav-brand img {
+        filter: invert(1);
+    }
+    .nav .social-items img {
+        filter: invert(1);
+    }
+    .nav-menu {
+        background-color: black;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .openmenu {
+        z-index: 10;
+        color: white;
+    }
+    .nav .nav-menu .nav-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav .nav-items .nav-links:hover {
+        background-color: black;
+    }
+    .nav .nav-items .nav-links a:hover {
+        color: #8790b1;
+    }
+    .vis-items {
+        opacity: 0;
+        height: 10px;
+    }
+    .vis-socials {
+        display: none;
+    }
+    /* .vis-nav {
+        height: 50px;
+        transition: height 10s ease-in-out;
+    } */
+    .openmenu {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        display: block;
+    }
+    .nav-links a {
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-brand a {
+        color: white;
+    }
+    .social-items a {
+        color: white;
+    }
+}
+
+
+/* --------------X-------------navbar-------------X--------------- */
+
+
+/* -------------------------------contact--------------------------------------- */
+
+.input-contactus input::placeholder,
+.input-contactus textarea::placeholder {
+    font-family: 'Abel', sans-serif;
+}
+
+.input-contactus {
+    margin: 15px 10px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-contactus label {
+    font-family: 'Abel', sans-serif;
+    color: black;
+}
+
+.input-contactus input,
+.input-contactus textarea {
+    width: 100%;
+    padding: 7px 7px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#contact form {
+    width: 40%;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url('../pexels-kampus-production-8507625.jpg') no-repeat center center/cover;
+    position: absolute;
+    opacity: .3;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.footer .form-element .btn {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.footer .form-element .btn:hover {
+    color: white;
+}
+
+
+/* ----------------x---------------contact----------------x----------------------- */
